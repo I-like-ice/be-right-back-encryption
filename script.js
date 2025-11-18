@@ -1,6 +1,6 @@
 // Demo credentials (for local/demo use only)
-const DEMO_USER = { username: 'user', password: 'pass123' };
-const LEVEL_PASSWORDS = { 2: 'level2pass', 3: 'level3pass' };
+const DEMO_USER = { username: 'joonfat', password: 'smurfcatorignals' };
+const LEVEL_PASSWORDS = { 2: 'noob', 3: 'pro' };
 
 // UI elements
 const loginSection = document.getElementById('login-section');
@@ -135,3 +135,4 @@ clearBtn.addEventListener('click', ()=>{ inputText.value=''; outputText.value=''
 
 // initial state
 showLogin();
+
