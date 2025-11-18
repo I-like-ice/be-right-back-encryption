@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Caesar Cipher — Multi-level</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Caesar Cipher — Multi-level</h1>
+
+    <section id="login-section" class="card">
+      <h2>Login</h2>
+      <label>Username
+        <input id="login-username" type="text" placeholder="username" />
+      </label>
+      <label>Password
+        <input id="login-password" type="password" placeholder="password" />
+      </label>
+      <div class="row">
+        <button id="login-btn">Login</button>
+      </div>
+      <p class="hint">This demo stores credentials in the page (not secure). Use only locally.</p>
+    </section>
+
+    <section id="app-section" class="card hidden">
+      <div class="row between">
+        <h2>Encrypt / Decrypt</h2>
+        <button id="logout-btn" class="small">Logout</button>
+      </div>
+
+      <label>Choose level
+        <select id="level-select">
+          <option value="1">Level 1 — single Caesar</option>
+          <option value="2">Level 2 — double Caesar (extra password)</option>
+          <option value="3">Level 3 — triple Caesar (extra password)</option>
+        </select>
+      </label>
+
+      <label>Input text
+        <textarea id="input-text" rows="4" placeholder="Enter text to encrypt or decrypt"></textarea>
+      </label>
+
+      <div id="keys-area">
+        <label>Key 1
+          <input id="key1" type="number" value="3" />
+        </label>
+        <label id="key2-label" class="hidden">Key 2
+          <input id="key2" type="number" value="5" />
+        </label>
+        <label id="key3-label" class="hidden">Key 3
+          <input id="key3" type="number" value="8" />
+        </label>
+      </div>
+
+      <div class="row">
+        <button id="encrypt-btn">Encrypt</button>
+        <button id="decrypt-btn">Decrypt</button>
+        <button id="clear-btn" class="small">Clear</button>
+      </div>
+
+      <label>Result
+        <textarea id="output-text" rows="4" readonly></textarea>
+      </label>
+
+      <p class="hint">Level 2 and 3 require an extra level password to use stronger modes.</p>
+    </section>
+
+    <footer class="muted">Demo only — client-side authentication is not secure.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

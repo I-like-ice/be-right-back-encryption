@@ -1,0 +1,20 @@
+:root{
+  --bg:#f6f7fb; --card:#ffffff; --accent:#2b7bf6; --muted:#666;
+}
+*{box-sizing:border-box;font-family:Segoe UI, Roboto, Arial, sans-serif}
+body{background:var(--bg);color:#111;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center}
+.container{width:760px;max-width:96%;padding:28px}
+.card{background:var(--card);padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(20,30,60,0.06);margin-bottom:14px}
+h1{margin:0 0 12px}
+h2{margin:0 0 8px}
+label{display:block;margin:8px 0}
+input[type=text],input[type=password],input[type=number],textarea,select{width:100%;padding:8px;border:1px solid #d7dbe8;border-radius:6px}
+.row{display:flex;gap:8px;margin-top:12px}
+.row.between{justify-content:space-between;align-items:center}
+button{background:var(--accent);color:#fff;border:0;padding:8px 12px;border-radius:6px;cursor:pointer}
+button.small{background:#ddd;color:#111;padding:6px 8px}
+.hidden{display:none}
+.muted{color:var(--muted);font-size:13px}
+.hint{color:#666;font-size:12px;margin-top:8px}
+#keys-area{display:flex;gap:12px}
+#keys-area label{flex:1}
